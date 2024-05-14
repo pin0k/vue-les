@@ -1,25 +1,27 @@
 <template>
     <div class="root">
         <h1>{{ text }}</h1>
-        <label>
+        <p>
+            <label>
             Введите e-mail:
             <input 
                 type="email" 
                 v-bind:value="email"
                 v-on:input="emailInput($event.target.value)"
             >
-        </label>
-        <label>
+            </label>
+        </p>
+        <p>
+           <label>
             Введите пароль:
             <input 
                 type="password" 
                 :value="password"
                 @input="passwordInput"
             >
-        </label>
+            </label>
+        </p>
     </div>
-    email: {{ email }}
-    password: {{ password }}
 </template>
 
 <script>
@@ -29,9 +31,9 @@ export default {
         return {
             text: 'Hello from 07.05.2024',  
             email: 'example@mail.ru',
-            password: '12345678'
+            password: '12345678'    
         }
-    },
+    },  
     methods: {
         emailInput(value) {
             this.email = value  

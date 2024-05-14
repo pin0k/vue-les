@@ -1,4 +1,7 @@
-<template>
+<template> 
+  <div>
+    <MyHomeLesson1/>
+  </div>
   <div>
     <MyComponents/>
   </div>
@@ -6,11 +9,13 @@
 
 <script>
 import MyComponents from './components/MyComponents.vue';
+import MyHomeLesson1 from './components/MyHomeLesson1.vue';
 
 export default {
   name: 'App',
   components: {
-    MyComponents
+    MyComponents,
+    MyHomeLesson1
   }
 }
 </script>
