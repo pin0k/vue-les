@@ -28,7 +28,7 @@
 
 <script>
 export default {
-    name: 'MyComponent',
+    name: 'MyHomeLesson1',
     data() {
         return {
             text: 'Hello from 14.05.2024',  
