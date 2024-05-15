@@ -3,6 +3,9 @@
     <SearchUser/>
   </div>
   <div>
+    <SearchUserProto/>
+  </div>
+  <div>
     <UserCard/>
   </div>
   <div>
@@ -18,6 +21,7 @@ import MyComponents from './components/MyComponents.vue';
 import MyHomeLesson1 from './components/MyHomeLesson1.vue';
 import UserCard from './components/UserCard.vue';
 import SearchUser from './components/SearchUser.vue';
+import SearchUserProto from './components/SearchUserProto.vue';
 
 export default {
   name: 'App',
@@ -25,7 +29,8 @@ export default {
     MyComponents,
     MyHomeLesson1,
     UserCard,
-    SearchUser
+    SearchUser,
+    SearchUserProto
   }
 }
 </script>
