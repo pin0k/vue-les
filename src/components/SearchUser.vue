@@ -6,24 +6,22 @@
         Я найду тебя:
         <input 
           type="search"
-          :value="searchValue"
-          @input="getInputSearch"
+          v-on:input="inputText = $event.target.value"  
         >
       </label>
-      <button>Search</button>
     </div>
-    <p>В строке поиска ввели: {{ inputSearchValue }}</p>
+    <p>В строке поиска ввели: {{ inputText }}</p>
     <p>
-      Всего имен: {{ people.length }}, совпадений: пока 0
+      Всего имен: {{ people.length }}, совпадений: {{ getSearch.length }}
     </p>
     <ul>
       <li
-        v-for="(person, index) in people"
+        v-for="(person, index) in getSearch"
         :key="index"
       >
         {{ person }}
-      </li>
-    </ul>
+    </li>
+    </ul>                          
 </template>
   
 <script>
@@ -31,17 +29,17 @@
     name: 'SearchUser',
     data() {
         return {
-            title: 'Hello from 15.05.2024', 
+            title: 'Hello from 16.05.2024', 
             subtitle: 'Домашнее задание к 1 уроку',
             people: [
               'Иван', 'Андрей', 'Петр', 'Даниил', 'Василий', 'Дмитрий'
             ],
-            inputSearchValue: ''
+            inputText: ''
         }
     },
-    methods: {
-      getInputSearch(evt) {
-        this.inputSearchValue = evt.target.value
+    computed: {
+      getSearch() {
+        return  this.people.filter(people => people.toLowerCase().includes(this.inputText.toLowerCase()));
       }
     }
   }
