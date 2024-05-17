@@ -1,5 +1,8 @@
 <template>
   <div>
+    <PhotoRedactor/>
+  </div>
+  <div>
     <SearchUser/>
   </div>
   <div>
@@ -22,6 +25,7 @@ import MyHomeLesson1 from './components/MyHomeLesson1.vue';
 import UserCard from './components/UserCard.vue';
 import SearchUser from './components/SearchUser.vue';
 import SearchUserProto from './components/SearchUserProto.vue';
+import PhotoRedactor from './components/PhotoRedactor.vue';
 
 export default {
   name: 'App',
@@ -30,7 +34,8 @@ export default {
     MyHomeLesson1,
     UserCard,
     SearchUser,
-    SearchUserProto
+    SearchUserProto,
+    PhotoRedactor
   }
 }
 </script>
