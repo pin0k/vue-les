@@ -1,5 +1,8 @@
 <template>
   <div>
+    <ProductList/>
+  </div>
+  <div>
     <PhotoEditor/>
   </div>
   <div>
@@ -26,6 +29,7 @@ import UserCard from './components/UserCard.vue';
 import SearchUser from './components/SearchUser.vue';
 import SearchUserProto from './components/SearchUserProto.vue';
 import PhotoEditor from './components/PhotoEditor.vue';
+import ProductList from './components/ProductList.vue';
 
 export default {
   name: 'App',
@@ -35,7 +39,8 @@ export default {
     UserCard,
     SearchUser,
     SearchUserProto,
-    PhotoEditor
+    PhotoEditor,
+    ProductList
   }
 }
 </script>
