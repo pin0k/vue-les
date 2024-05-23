@@ -85,7 +85,7 @@
                         @click="isCatVisible = !isCatVisible"
                     >
                         {{ isCatVisible ? btnText.hidden : btnText.show }}
-                        <!-- или -->
+                        <!-- или такой вариант -->
                         <!-- {{ isCatVisible ? 'Показать' : 'Спрятать' }} -->
                     </button>
                 </div>

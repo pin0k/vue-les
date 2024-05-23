@@ -2,7 +2,7 @@
   <div class="product-list">
     <div class="flex top-information">
       <h1>Письменные столы</h1>
-      <my-input v-model="searchText" />
+      <myInput @search="searchProducts" />
       <!--input 
         type="text" 
         class="search"
@@ -16,9 +16,9 @@
         @input="searchText = $event.target.value"
       -->
       {{ searchText }}
-      <button>
+      <!--button>
         Найти
-      </button>
+      </button-->
     </div>
     
     <ul class="list-default flex">
@@ -73,6 +73,9 @@ export default {
   methods: {
     addToBasket(index) {
       console.log(index)
+    },
+    searchProducts(searchText) {
+      console.log(`Загрузить товары ${searchText}`);
     }
   }
 }

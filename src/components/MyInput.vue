@@ -1,18 +1,34 @@
 <template>
-  <input 
-    type="text" 
-    class="search"
-    v-model="searchText"
-  >
+  <div class="flex">
+    <input 
+      type="text" 
+      class="search"
+      v-model="searchText"
+    >
+    <button
+      @click="$emit('search', searchText)"
+    >
+      Найти
+    </button>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'MyInput'
+  name: 'MyInput',
+  data() {
+    return {
+      searchText: ''
+    }
+  }
 }
 </script>
 
 <style>
+  .flex {
+    display: flex;
+    align-items: baseline;
+  }
   input {
     height: 25px;
     margin-left: 40px;
