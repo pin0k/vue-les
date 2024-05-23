@@ -1,5 +1,8 @@
 <template>
   <div>
+    <UserForm/>
+  </div>
+  <div>
     <ProductList/>
   </div>
   <div>
@@ -30,6 +33,7 @@ import SearchUser from './components/SearchUser.vue';
 import SearchUserProto from './components/SearchUserProto.vue';
 import PhotoEditor from './components/PhotoEditor.vue';
 import ProductList from './components/ProductList.vue';
+import UserForm from './components/UserForm.vue';
 
 export default {
   name: 'App',
@@ -40,7 +44,8 @@ export default {
     SearchUser,
     SearchUserProto,
     PhotoEditor,
-    ProductList
+    ProductList,
+    UserForm
   }
 }
 </script>
