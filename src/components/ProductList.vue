@@ -81,7 +81,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   li {
     margin-right: 20px;
     margin-bottom: 22px;

@@ -47,7 +47,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .product-card {
     border: 1px solid rgb(211, 211, 211);
     padding: 20px 15px;

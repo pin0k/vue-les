@@ -111,7 +111,7 @@
   }
 </script>
   
-<style>
+<style scoped>
     .user-card {
       margin-top: 40px;
     }

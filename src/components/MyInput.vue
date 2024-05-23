@@ -24,7 +24,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .flex {
     display: flex;
     align-items: baseline;

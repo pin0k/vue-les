@@ -44,6 +44,4 @@
     }
   }
 </script>
-<style>
-</style>
   

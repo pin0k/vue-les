@@ -60,18 +60,28 @@ export default {
   },
   methods: {
     addNewField() {
-      this.$set(this.formFields, this.additionalField, '')
+      this.formFields[this.additionalField] = "";
     }
   }
 }
 </script>
 
 <style scoped>
+  .flex {
+    display: flex;
+  }
   input {
     width: 400px;
   }
   .form-fields {
     margin-right: 50px;
     margin-bottom: 50px;
+  }
+  .form-group {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .form-fields .form-group {
+    justify-content: space-between;
   }
 </style>
